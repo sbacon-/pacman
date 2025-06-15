@@ -241,3 +241,4 @@ func init_values() -> void:
 	extend = false
 	blank_coords.clear()
 	dots_eaten = 0
+	game_over = false
