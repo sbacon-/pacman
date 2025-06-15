@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjd3s6u7e4drp"]
+
+[ext_resource type="Texture2D" uid="uid://bpe2yk6cpfu4v" path="res://assets/spritesheet.png" id="1_lfepc"]
+[ext_resource type="Script" uid="uid://dqo0vftx1mj1o" path="res://scripts/fruit.gd" id="1_yvtr8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yvtr8"]
+size = Vector2(8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yvtr8"]
+atlas = ExtResource("1_lfepc")
+region = Rect2(32, 48, 16, 16)
+
+[node name="Fruit" type="Area2D"]
+top_level = true
+script = ExtResource("1_yvtr8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_yvtr8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_yvtr8")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

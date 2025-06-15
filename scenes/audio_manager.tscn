@@ -1,0 +1,103 @@
+[gd_scene load_steps=26 format=3 uid="uid://dserstn2uu3aq"]
+
+[ext_resource type="Script" uid="uid://cexevv7pbtg53" path="res://scripts/audio_manager.gd" id="1_thanh"]
+[ext_resource type="AudioStream" uid="uid://5gl36mx846o7" path="res://assets/sounds/credit.wav" id="2_nplbh"]
+[ext_resource type="AudioStream" uid="uid://cc8hn1xv5x8gq" path="res://assets/sounds/death_0.wav" id="3_24ib7"]
+[ext_resource type="AudioStream" uid="uid://cwedb2s0cfafx" path="res://assets/sounds/death_1.wav" id="4_kr8a2"]
+[ext_resource type="AudioStream" uid="uid://slbhvas1ijkp" path="res://assets/sounds/eat_dot_0.wav" id="5_2agnf"]
+[ext_resource type="AudioStream" uid="uid://dsacn4uprmqb5" path="res://assets/sounds/eat_dot_1.wav" id="6_yt2vs"]
+[ext_resource type="AudioStream" uid="uid://b75a0eek3taqt" path="res://assets/sounds/eat_fruit.wav" id="7_2fqsb"]
+[ext_resource type="AudioStream" uid="uid://db3bfi3au1bdw" path="res://assets/sounds/eat_ghost.wav" id="8_fcxyy"]
+[ext_resource type="AudioStream" uid="uid://ctepsto3lrgj5" path="res://assets/sounds/extend.wav" id="9_1y43m"]
+[ext_resource type="AudioStream" uid="uid://bgr78lpr2v0et" path="res://assets/sounds/eyes.wav" id="10_n1t8p"]
+[ext_resource type="AudioStream" uid="uid://bok1t265oad3v" path="res://assets/sounds/eyes_firstloop.wav" id="11_bne8e"]
+[ext_resource type="AudioStream" uid="uid://bumul5j13hgq6" path="res://assets/sounds/fright.wav" id="12_c6r4u"]
+[ext_resource type="AudioStream" uid="uid://cvob3hcvt4srq" path="res://assets/sounds/fright_firstloop.wav" id="13_785fq"]
+[ext_resource type="AudioStream" uid="uid://dgxw05hyllyta" path="res://assets/sounds/intermission.wav" id="14_26ibh"]
+[ext_resource type="AudioStream" uid="uid://bhqfw4qnqbx0x" path="res://assets/sounds/siren0.wav" id="15_d55hy"]
+[ext_resource type="AudioStream" uid="uid://dcua6iws3f6c6" path="res://assets/sounds/siren0_firstloop.wav" id="16_1cnjy"]
+[ext_resource type="AudioStream" uid="uid://b1uv4kafakp2q" path="res://assets/sounds/siren1.wav" id="17_2igfy"]
+[ext_resource type="AudioStream" uid="uid://bls50fh3olmjh" path="res://assets/sounds/siren1_firstloop.wav" id="18_gi52w"]
+[ext_resource type="AudioStream" uid="uid://b7aurc6ndfpxx" path="res://assets/sounds/siren2.wav" id="19_g71vj"]
+[ext_resource type="AudioStream" uid="uid://ddfd6vscaajo8" path="res://assets/sounds/siren2_firstloop.wav" id="20_ladlq"]
+[ext_resource type="AudioStream" uid="uid://bpnjs7hu1kqnw" path="res://assets/sounds/siren3.wav" id="21_ku15p"]
+[ext_resource type="AudioStream" uid="uid://76b4vi6l883f" path="res://assets/sounds/siren3_firstloop.wav" id="22_sa6p2"]
+[ext_resource type="AudioStream" uid="uid://da175j728i8f8" path="res://assets/sounds/siren4.wav" id="23_opu6i"]
+[ext_resource type="AudioStream" uid="uid://fd4ooxqtpn71" path="res://assets/sounds/siren4_firstloop.wav" id="24_t2ybr"]
+[ext_resource type="AudioStream" uid="uid://j4rdrjb3cal3" path="res://assets/sounds/start.wav" id="25_cewst"]
+
+[node name="AudioManager" type="Node"]
+process_mode = 3
+script = ExtResource("1_thanh")
+
+[node name="Credit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_nplbh")
+
+[node name="Death0" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_24ib7")
+
+[node name="Death1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_kr8a2")
+
+[node name="EatDot0" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_2agnf")
+
+[node name="EatDot1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_yt2vs")
+
+[node name="EatFruit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_2fqsb")
+
+[node name="EatGhost" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_fcxyy")
+
+[node name="Extend" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_1y43m")
+
+[node name="Eyes" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_n1t8p")
+
+[node name="EyesFirstLoop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_bne8e")
+
+[node name="Fright" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_c6r4u")
+
+[node name="FrightFirstLoop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_785fq")
+
+[node name="Intermission" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_26ibh")
+
+[node name="Siren0" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_d55hy")
+
+[node name="Siren0FirstLoop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_1cnjy")
+
+[node name="Siren1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_2igfy")
+
+[node name="Siren1FirstLoop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_gi52w")
+
+[node name="Siren2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19_g71vj")
+
+[node name="Siren2FirstLoop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("20_ladlq")
+
+[node name="Siren3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_ku15p")
+
+[node name="Siren3FirstLoop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22_sa6p2")
+
+[node name="Siren4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("23_opu6i")
+
+[node name="Siren4FirstLoop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24_t2ybr")
+
+[node name="Start" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25_cewst")

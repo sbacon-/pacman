@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ds7ovd0h6gg7t"]
+
+[ext_resource type="Script" uid="uid://b03vf8uqr0lb0" path="res://scripts/game_manager.gd" id="1_hwd4i"]
+
+[node name="GameManager" type="Node"]
+script = ExtResource("1_hwd4i")
+
+[node name="PhaseTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="PhaseTimer" to="." method="_on_phase_timer_timeout"]
